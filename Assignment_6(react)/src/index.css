@@ -1,0 +1,94 @@
+/* Global */
+body {
+  background: linear-gradient(to bottom right, #eef2f3, #dfe9f3);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  padding-bottom: 40px;
+}
+
+/* Container spacing */
+.container {
+  margin-top: 40px;
+}
+
+/* Form card spacing */
+.card-form {
+  padding: 20px !important;
+}
+
+/* Add space between form card and table card */
+.row > .col-md-5 {
+  margin-bottom: 20px;
+}
+
+/* Form fields spacing */
+.mb-3 {
+  margin-bottom: 18px !important;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 12px 14px;    /* more internal spacing */
+}
+
+/* Buttons spacing */
+.btn {
+  border-radius: 10px;
+  padding: 8px 20px;
+  margin-right: 5px;     /* space between Add / Update / Clear buttons */
+}
+
+/* /* Table styling  */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 12px;        /* Rounded corners like other tables */
+  overflow: hidden;           /* Needed for rounded corners */
+  background: white;          
+}
+
+/* Header spacing */
+.table thead th {
+ border: 1px solid #ccc;
+  padding: 14px 16px;         /* Extra space for readability */
+  text-align: left;
+  background: #f4f4f4;
+  font-weight: 600;
+}
+
+/* Table row spacing */
+.table tbody td {
+  border: 1px solid #ccc;
+  padding: 12px 14px;         /* Align with global row spacing */
+  text-align: left;  
+}
+
+/* Alternate row coloring */
+.table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Hover effect */
+.table tr:hover {
+  background: #f7faff;        /* Smooth hover effect */
+  transition: 0.2s ease-in-out;
+}
+
+/* First column highlight */
+.table td:first-child,
+.table th:first-child {
+  background: #f9f9f9;
+}
+
+/* Button spacing inside table */
+.btn-group .btn {
+  padding: 5px 12px;
+  margin-right: 5px;  /* adds space between Edit & Delete */
+}
+
+/* Hover */
+.table tbody tr:hover {
+  background: #f7faff;
+  transition: 0.2s ease-in-out;
+} 
