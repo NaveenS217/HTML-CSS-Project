@@ -1,0 +1,25 @@
+{
+  "conversionRate": 2.8,
+  "dailyOrders": 11800,
+
+  "ordersOverTime": [
+    { "date": "Mon", "orders": 5200 },
+    { "date": "Tue", "orders": 6100 },
+    { "date": "Wed", "orders": 6400 },
+    { "date": "Thu", "orders": 7200 },
+    { "date": "Fri", "orders": 12000 },
+    { "date": "Sat", "orders": 15000 },
+    { "date": "Sun", "orders": 11800 }
+  ],
+
+  "revenueByCategory": [
+    { "category": "Electronics", "revenue": 42000 },
+    { "category": "Fashion", "revenue": 32000 },
+    { "category": "Home", "revenue": 28000 },
+    { "category": "Beauty", "revenue": 15000 },
+    { "category": "Sports", "revenue": 10000 }
+  ],
+
+  "aov": 79.5,
+  "refundPercent": 4.8
+}

@@ -1,0 +1,188 @@
+/* =========================================================
+   BASE HEADER
+   ========================================================= */
+.header {
+  height: 64px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+/* =========================================================
+   LARGE SEARCH BAR
+   ========================================================= */
+.search-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  padding: 10px 16px;
+  border-radius: 12px;
+  max-width: 600px;
+  gap: 12px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.search-container:hover {
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: transparent;
+}
+
+.search-icon {
+  color: #64748b;
+}
+
+/* =========================================================
+   RIGHT SECTION
+   ========================================================= */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+/* Notification Button */
+.icon-btn {
+  background: #f1f5f9;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-btn:hover {
+  background: #e2e8f0;
+}
+
+/* Profile Avatar */
+.avatar {
+  width: 42px;
+  height: 42px;
+  background: #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.avatar:hover {
+  background: #cbd5e1;
+}
+
+/* =========================================================
+   DROPDOWN MENUS (Search, Notifications, Profile)
+   ========================================================= */
+.dropdown {
+  position: absolute;
+  top: 72px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.2s ease;
+  z-index: 100;
+}
+
+/* Search Dropdown */
+.search-drop {
+  left: 24px;
+  width: 380px;
+}
+
+.search-drop h4 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.search-drop p {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #475569;
+}
+
+.search-drop p:hover {
+  background: #f1f5f9;
+}
+
+/* Notification Dropdown */
+.notify-drop {
+  right: 70px;
+  width: 260px;
+}
+
+.notify-drop h4 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.notify-drop p {
+  margin: 6px 0;
+  padding: 8px 6px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #334155;
+}
+
+.notify-drop p:hover {
+  background: #f1f5f9;
+}
+
+/* Profile Dropdown */
+.profile-drop {
+  right: 24px;
+  width: 180px;
+}
+
+.profile-drop p {
+  margin: 8px 0;
+  padding: 8px 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #334155;
+}
+
+.profile-drop p:hover {
+  background: #f1f5f9;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

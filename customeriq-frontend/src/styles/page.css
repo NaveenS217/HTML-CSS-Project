@@ -1,0 +1,204 @@
+/* =========================================================
+   GLOBAL PAGE LAYOUT
+   ========================================================= */
+.page {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+}
+
+.page-header h2 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.page-subtitle {
+  margin: 4px 0 0 0;
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+/* =========================================================
+   KPI ROW (Dashboard / Revenue / Operations)
+   ========================================================= */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+/* =========================================================
+   GRID HELPERS (used by charts & cards)
+   ========================================================= */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 28px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* =========================================================
+   CHART BOX STYLING (all pages)
+   ========================================================= */
+.chart-box {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Chart Header (Performance / Revenue pages) */
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart-header h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.chart-value {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* =========================================================
+   DONUT CHART CENTER LABEL (Dashboard / Revenue)
+   ========================================================= */
+.donut-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donut-label {
+  position: absolute;
+  text-align: center;
+}
+
+.donut-label h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+.donut-label p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* =========================================================
+   TABLE CARD WRAPPER
+   ========================================================= */
+.table-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.table-card h3 {
+  margin: 0 0 14px 0;
+  font-size: 1.2rem;
+  color: #0f172a;
+}
+
+/* =========================================================
+   TABLE STYLING (Performance / Operations)
+   ========================================================= */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table th {
+  background: #f1f5f9;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+}
+
+.table tr:hover td {
+  background: #f8fafc;
+}
+
+/* =========================================================
+   CARD STYLING (general)
+   ========================================================= */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.metric {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* =========================================================
+   RESPONSIVE BEHAVIOR
+   ========================================================= */
+@media (max-width: 900px) {
+  .page {
+    padding: 18px;
+  }
+  .chart-box {
+    height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .chart-box {
+    height: 280px;
+  }
+}

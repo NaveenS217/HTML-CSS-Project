@@ -1,0 +1,23 @@
+{
+  "deliveryDelays": [
+    { "region": "US", "delayDays": 2.1 },
+    { "region": "EU", "delayDays": 1.8 },
+    { "region": "India", "delayDays": 3.6 },
+    { "region": "Singapore", "delayDays": 1.2 },
+    { "region": "Japan", "delayDays": 2.4 }
+  ],
+
+  "warehouseProcessing": [
+    { "warehouse": "US-East WH", "throughput": 1200 },
+    { "warehouse": "US-West WH", "throughput": 950 },
+    { "warehouse": "EU WH", "throughput": 880 },
+    { "warehouse": "India WH", "throughput": 1100 }
+  ],
+
+  "couriers": [
+    { "name": "FedEx", "onTimePercent": 92, "delays": 120 },
+    { "name": "DHL", "onTimePercent": 95, "delays": 80 },
+    { "name": "BlueDart", "onTimePercent": 88, "delays": 160 },
+    { "name": "Amazon Logistics", "onTimePercent": 97, "delays": 40 }
+  ]
+}

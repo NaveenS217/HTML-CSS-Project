@@ -1,0 +1,97 @@
+{
+  "uptime": "99.87%",
+  "avgApiResponse": 180,
+
+  "traffic": [
+    { "date": "Mon", "value": 120000 },
+    { "date": "Tue", "value": 135000 },
+    { "date": "Wed", "value": 142000 },
+    { "date": "Thu", "value": 155000 },
+    { "date": "Fri", "value": 160500 },
+    { "date": "Sat", "value": 98000 },
+    { "date": "Sun", "value": 0 }
+  ],
+
+  "apiResponseTimes": [
+    { "time": "00:00", "avgResponse": 210 },
+    { "time": "04:00", "avgResponse": 190 },
+    { "time": "08:00", "avgResponse": 170 },
+    { "time": "12:00", "avgResponse": 160 },
+    { "time": "16:00", "avgResponse": 185 },
+    { "time": "20:00", "avgResponse": 200 }
+  ],
+
+  "latencyByRegion": [
+    { "name": "US-East", "value": 120, "latency": 120 },
+    { "name": "US-West", "value": 150, "latency": 150 },
+    { "name": "EU-Central", "value": 130, "latency": 130 },
+    { "name": "India", "value": 200, "latency": 200 },
+    { "name": "Singapore", "value": 110, "latency": 110 }
+  ],
+
+  "slowApis": [
+    { "name": "/checkout", "avgResponse": 420, "errorsPercent": 3.5 },
+    { "name": "/payment", "avgResponse": 390, "errorsPercent": 2.1 },
+    { "name": "/orders", "avgResponse": 350, "errorsPercent": 1.2 },
+    { "name": "/cart", "avgResponse": 310, "errorsPercent": 1.0 }
+  ],
+
+  "funnel": [
+    { "stage": "Home", "value": 100000 },
+    { "stage": "Search", "value": 82000 },
+    { "stage": "Product View", "value": 63000 },
+    { "stage": "Add to Cart", "value": 28000 },
+    { "stage": "Checkout", "value": 18000 },
+    { "stage": "Purchase", "value": 14500 }
+  ],
+
+  "metrics": {
+    "addToCartRate": "12%",
+    "checkoutConversion": "78%",
+    "searchFailureRate": "1.9%"
+  },
+
+  "deliveryDelays": [
+    { "name": "US", "value": 2.1 },
+    { "name": "EU", "value": 1.8 },
+    { "name": "India", "value": 3.6 },
+    { "name": "Singapore", "value": 1.2 },
+    { "name": "Japan", "value": 2.4 }
+  ],
+
+  "warehouseProcessing": [
+    { "name": "US-East WH", "value": 1200 },
+    { "name": "US-West WH", "value": 950 },
+    { "name": "EU WH", "value": 880 },
+    { "name": "India WH", "value": 1100 }
+  ],
+
+  "couriers": [
+    { "name": "FedEx", "onTimePercent": 92, "delays": 120 },
+    { "name": "DHL", "onTimePercent": 95, "delays": 80 },
+    { "name": "BlueDart", "onTimePercent": 88, "delays": 160 },
+    { "name": "Amazon Logistics", "onTimePercent": 97, "delays": 40 }
+  ],
+  
+  "ordersOverTime": [
+    { "date": "Mon", "value": 5200 },
+    { "date": "Tue", "value": 6100 },
+    { "date": "Wed", "value": 6400 },
+    { "date": "Thu", "value": 7200 },
+    { "date": "Fri", "value": 12000 },
+    { "date": "Sat", "value": 15000 },
+    { "date": "Sun", "value": 11800 }
+  ],
+
+  "revenueByCategory": [
+    { "name": "Electronics", "value": 42000 },
+    { "name": "Fashion", "value": 32000 },
+    { "name": "Home", "value": 28000 },
+    { "name": "Beauty", "value": 15000 },
+    { "name": "Sports", "value": 10000 }
+  ],
+
+  "aov": 79.5,
+  "refundPercent": 2.8
+
+}

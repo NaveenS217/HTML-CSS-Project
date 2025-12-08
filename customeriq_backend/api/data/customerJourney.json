@@ -1,0 +1,15 @@
+{
+  "funnel": [
+    { "stage": "Home", "value": 100000 },
+    { "stage": "Search", "value": 82000 },
+    { "stage": "Product View", "value": 63000 },
+    { "stage": "Add to Cart", "value": 28000 },
+    { "stage": "Checkout", "value": 18000 },
+    { "stage": "Purchase", "value": 14500 }
+  ],
+  "metrics": {
+    "addToCartRate": "12%",
+    "checkoutConversion": "78%",
+    "searchFailureRate": "1.9%"
+  }
+}
